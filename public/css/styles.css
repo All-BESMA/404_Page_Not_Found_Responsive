@@ -1,0 +1,45 @@
+.bg {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url(../images/404_Page.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #1d3557;
+}
+
+.bg .btn {
+  position: absolute;
+  top: 69.5%;
+  left: 55.6%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 25px 42px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Increase/decrease the pixels if needed */
+/* For all devices with a screen size smaller than 1366px, the background-attachment property will be scroll instead of fixed */
+
+@media only screen and (max-device-width: 375px) {
+  .bg {
+    background-image: url(../images/404_Page_Mobile.png);
+    background-attachment: scroll;
+  }
+  .bg .btn {
+    top: 69.5%;
+    left: 55.6%;
+    padding: 25px 42px;
+  }
+}
+
+.bg .btn:hover {
+  background-color: #555;
+}
